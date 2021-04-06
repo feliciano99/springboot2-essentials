@@ -1,0 +1,27 @@
+server:
+   error:
+      include-stacktrace: never
+spring:
+   application:
+      name: springboot2-essentials
+   datasource:
+      url: jdbc:mysql://localhost:3306/anime?useSSL=false&createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true
+      username: root
+      password: root
+   jpa:
+      hibernate:
+         ddl-auto: update
+      show-sql: true
+logging:
+   level:
+      org:
+         hibernate:
+            SQL: DEBUG
+management:
+   endpoints:
+      web:
+         exposure:
+            include: info, metrics, health, env, prometheus
+info:
+   app: Spring Boot 2 Essentials by DevDojo
+   website: https://devdojo.academy

@@ -1,0 +1,4 @@
+mvn compile com.google.cloud.tools:jib-maven-plugin:2.8.0:dockerBuild -Dimage=registry.hub.docker.com/feliciano99/springboot2-essentials
+
+-docker login
+mvn compile com.google.cloud.tools:jib-maven-plugin:2.8.0:build -Dimage=registry.hub.docker.com/feliciano99/springboot2-essentials
